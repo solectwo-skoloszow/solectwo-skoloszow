@@ -32,7 +32,7 @@ h1{
   background-color: var(--darkGreen);
   margin: 0 auto;
   max-width: 1000px ;
-  width: 70vw;
+  width: 100vw;
   min-width: 180px ;
   height: 100%;
   padding-left: 10%;
@@ -59,6 +59,8 @@ header{
 }  
 article{
   margin-top: 5vh;
+  display: grid;
+  row-gap: 2vh;
 }
 .ogloszenie
 {
@@ -80,5 +82,5 @@ header
   text-align: center;
 }
 .wstemp{
-  
+  margin-top: 10px;
 }
