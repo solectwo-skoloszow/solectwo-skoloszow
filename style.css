@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --darkGreen: #386641;
+  --green: #6A994E;
+  --lightGreen: #A7C957;
+  --grey: #F2E8CF;
+  --red: #BC4749;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "Zilla Slab", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--green);
+  color: var(--grey);
+}
+h1, h2, h3, h4,h5,h6 {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+h1{
+  font-size: 3rem;
+}
+.main_box
+{
+  background-color: var(--darkGreen);
+  margin: 0 auto;
+  max-width: 1000px ;
+  width: 70vw;
+  min-width: 180px ;
+  height: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  min-height: 100vh;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+}
+.soltys
+{
+  width: 20vw;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.soltys img{
+  width: 100%;
+  height: auto;
+}  
+article{
+  margin-top: 5vh;
+}
+.ogloszenie
+{
+
+}
+.data
+{
+
+}
+.wstemp
+{
+  font-size: 1.2rem;
+  font-family: "Zilla Slab", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+header
+{
+  text-align: center;
+}
+.wstemp{
+  
+}
