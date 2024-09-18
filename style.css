@@ -27,12 +27,18 @@ h1, h2, h3, h4,h5,h6 {
 h1{
   font-size: 3rem;
 }
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.7rem;
+}
 .main_box
 {
   background-color: var(--darkGreen);
   margin: 0 auto;
-  max-width: 1000px ;
-  width: 100vw;
+  max-width: 1200px ;
+  width: 70vw;
   min-width: 180px ;
   height: 100%;
   padding-left: 10%;
@@ -40,6 +46,22 @@ h1{
   padding-top: 2%;
   padding-bottom: 2%;
   min-height: 100vh;
+}
+@media screen and (max-width: 600px) {
+  .main_box
+  {
+    background-color: var(--darkGreen);
+    margin: 0 auto;
+    max-width: 1200px ;
+    width: 100vw;
+    min-width: 180px ;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    min-height: 100vh;
+  }
 }
 header{
   display: flex;
@@ -50,6 +72,7 @@ header{
 .soltys
 {
   width: 20vw;
+  min-width: 200px;
   overflow: hidden;
   border-radius: 20px;
 }
@@ -68,7 +91,7 @@ article{
 }
 .data
 {
-
+  opacity: 70%;
 }
 .wstemp
 {
@@ -76,11 +99,82 @@ article{
   font-family: "Zilla Slab", system-ui;
   font-weight: 600;
   font-style: normal;
+  margin-top: 10px;
 }
 header
 {
   text-align: center;
 }
-.wstemp{
-  margin-top: 10px;
+.ogloszenie .tytul
+{
+  margin-bottom: 0.7vh;
+}
+
+.carousel {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, .5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
 }
