@@ -1,4 +1,3 @@
-const buttons = document.querySelectorAll("[data-carousel-button]");
 const carousel = document.querySelector("[data-carousel]");
 const slides = carousel.querySelector("[data-slides]");
 
@@ -18,17 +17,4 @@ function nextSlide() {
 }
 
 // Set up automatic slide change every 2 seconds
-const slideInterval = setInterval(nextSlide, 2000);
-
-// Add click event listeners to buttons
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    clearInterval(slideInterval); // Stop auto-sliding when a button is clicked
-    const offset = button.dataset.carouselButton === "next" ? 1 : -1;
-    changeSlide(offset);
-  });
-});
-
-// Optional: Pause auto-sliding when hovering over the carousel
-carousel.addEventListener("mouseenter", () => clearInterval(slideInterval));
-carousel.addEventListener("mouseleave", () => setInterval(nextSlide, 2000));
+const slideInterval = setInterval(nextSlide, 3000);
