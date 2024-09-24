@@ -17,4 +17,4 @@ function nextSlide() {
 }
 
 // Set up automatic slide change every 2 seconds
-const slideInterval = setInterval(nextSlide, 3000);
+const slideInterval = setInterval(nextSlide, 4000);

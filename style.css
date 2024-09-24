@@ -9,13 +9,14 @@
 }
 *{
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0px ;
+  padding: 0px ;
 }
 body{
   font-family: "Zilla Slab", system-ui;
   font-weight: 400;
   font-style: normal;
+  font-size: 1.5rem;
   background-color: var(--green);
   color: var(--grey);
 }
@@ -25,13 +26,13 @@ h1, h2, h3, h4,h5,h6 {
   font-style: normal;
 }
 h1{
-  font-size: 3rem;
+  font-size: 5vmin;
 }
 h2{
-  font-size: 2rem;
+  font-size: 4vmin;
 }
 h3{
-  font-size: 1.7rem;
+  font-size: 2.7vmin;
 }
 .main_box
 {
@@ -39,71 +40,52 @@ h3{
   margin: 0 auto;
   max-width: 1200px ;
   width: 70vw;
-  min-width: 180px ;
+  min-width: 180px;
   height: 100%;
-  padding-left: 10%;
-  padding-right: 10%;
   padding-top: 2%;
   padding-bottom: 2%;
   min-height: 100vh;
 }
-@media screen and (max-width: 600px) {
-  .main_box
-  {
-    background-color: var(--darkGreen);
-    margin: 0 auto;
-    max-width: 1200px ;
-    width: 100vw;
-    min-width: 180px ;
-    height: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    min-height: 100vh;
-  }
-}
+
 header{
+  width: 100%;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 12px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .soltys
 {
   width: 20vw;
-  min-width: 200px;
+  max-width: 200px;
   overflow: hidden;
   border-radius: 20px;
 }
 .soltys img{
   width: 100%;
   height: auto;
-}  
+}
 article{
   margin-top: 5vh;
   display: grid;
   row-gap: 2vh;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-.ogloszenie
+.ogloszenie .text ul li
 {
-
-}
-.data
-{
-  opacity: 70%;
+  margin-bottom: 2%;
 }
 .wstemp
 {
-  font-size: 1.2rem;
+  font-size: 2vmax;
   font-family: "Zilla Slab", system-ui;
   font-weight: 600;
   font-style: normal;
   margin-top: 10px;
-}
-header
-{
-  text-align: center;
 }
 .ogloszenie .tytul
 {
@@ -112,7 +94,7 @@ header
 
 .carousel {
   width: 100%;
-  height: 20vh;
+  height: 25vh;
   position: relative;
 }
 
@@ -177,4 +159,33 @@ header
 
 .carousel-button.next {
   right: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .main_box
+  {
+    background-color: var(--darkGreen);
+    max-width: 1200px ;
+    width: 100vw;
+    min-width: 180px ;
+    height: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    min-height: 100vh;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  h2{
+    font-size: 1.8rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  .wstemp
+  {
+    font-size: 1.3rem;
+  }
+  body{
+    font-size: 1.1rem;
+  }
 }
